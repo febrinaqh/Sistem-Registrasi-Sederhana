@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sing Up Form</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="container">
+            <form class="form" id="form-signup">
+                <p class="form-title">Sign Up</p>
+                <div class="form-input">
+                    <input class="userdata " id="email" type="email" placeholder="Email" value="" required>
+                    <input class="userdata" id="un" type="text" placeholder="Username" value="" maxlength="10" required>
+                    <input class="userdata" id="pw" type="password" placeholder="Password" value="" required> <br>
+                    <label class="checkbox">
+                        <input type="checkbox" id="checkbox"> I agree to the <a class="term">Terms and Conditions</a>
+                    </label> <br> <br>
+                    <button class="button" type="submit" id="submit-signup">Sign Up</button>
+                    <p onclick="loginlink()" class="form-link" id="login">Already have an account? Sign In</p>
+                </div> 
+            </form>
+
+            <form class="form" id="form-login" style="display: none;">
+                <p class="form-title">Login</p>
+                <div class="form-input">
+                    <input class="userdata" id="un-in" type="text"  placeholder="Username">
+                    <input class="userdata" id="pw-in" type="password" placeholder="Password"> <br>
+                    <button class="button" type="submit" id="submit-login">Continue</button>
+                    <p onclick="signuplink()" class="form-link" id="signup">Don't have account? Register</p> 
+                </div> 
+            </form>
+        </div>
+
+    <script src="./src/script.js"></script> 
+</body>
+</html>
